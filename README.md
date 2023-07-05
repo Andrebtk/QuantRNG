@@ -31,6 +31,6 @@ $ pip install -r requirements.txt
    ```
    or for showing the circuit
    ```bash
-   python3 quantumRNG.py --circuit
+   python3 quantumRNG.py -circuit
    ```
    
