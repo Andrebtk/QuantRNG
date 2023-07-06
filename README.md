@@ -6,7 +6,7 @@ This project implements a Quantum Random Number Generator (RNG) using Qiskit, a 
 
 - Generates random numbers using a quantum circuit implemented in Qiskit.
 - Utilizes quantum phenomena like superposition and measurement to ensure randomness.
-- Supports customization from 0 to n (depending on your machine)
+- Supports customization between two integer. 
 
 ## Getting Started
 
