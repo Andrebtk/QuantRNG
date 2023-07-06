@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 import sys
 from qiskit import QuantumCircuit
 from qiskit.providers.aer import AerSimulator
 from qiskit import Aer
 
 
+=======
+>>>>>>> eeaa6d60ddc6d866cc02d3b202b963e36482d951
 def maxCount(res, nQubit):
     maxF = (nQubit)*"0"
     for i in res:
@@ -11,6 +14,7 @@ def maxCount(res, nQubit):
             maxF = i            
     return maxF
 
+<<<<<<< HEAD
 
 def bin2Dec(bin):
     return int(bin,2)
@@ -48,6 +52,11 @@ def QuantRNG(maxInput):
     return result
 
 
+=======
+def bin2Dec(bin):
+    return int(bin,2)
+
+>>>>>>> eeaa6d60ddc6d866cc02d3b202b963e36482d951
 #Not used yet
 def XY(res):
     xData = []
@@ -56,4 +65,8 @@ def XY(res):
     for i in res:
         yData.append(int(res[i]))
         xData.append(int(i))
+<<<<<<< HEAD
     return (xData, yData)
+=======
+    return (xData, yData)
+>>>>>>> eeaa6d60ddc6d866cc02d3b202b963e36482d951
