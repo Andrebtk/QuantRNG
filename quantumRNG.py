@@ -1,8 +1,13 @@
-from libRNG import maxCount, bin2Dec, XY, QuantRNG
+from libRNG import QuantRNG, QuantRNGint
 
 
-maxInput = int(input("Generate a number between 0 and: "))
+minInput = int(input("Generate a number between: "))
+maxInput = int(input("And: "))
 
-print(QuantRNG(maxInput))
+if minInput == 0:
+    print(QuantRNG(maxInput))
+else:
+    print(QuantRNGint(minInput, maxInput))
 
+    
 

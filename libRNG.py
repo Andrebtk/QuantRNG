@@ -17,6 +17,7 @@ def bin2Dec(bin):
 
 
 def QuantRNG(maxInput):
+
     n=0
     for i in range(maxInput):
         if 2**i < maxInput:
@@ -44,16 +45,20 @@ def QuantRNG(maxInput):
 
     if result > delta:
         result-=delta
-
+    
     return result
 
+def QuantRNGint(minIn, maxIn):
 
-#Not used yet
-def XY(res):
-    xData = []
-    yData = []
+    
+    if minIn != 0:
+        maxInput = maxIn - minIn
+    else:
+        maxInput=maxIn
 
-    for i in res:
-        yData.append(int(res[i]))
-        xData.append(int(i))
-    return (xData, yData)
+    result = QuantRNG(maxInput)
+
+    if minIn != 0:
+            result += minIn
+    
+    return result
