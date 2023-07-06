@@ -1,0 +1,2 @@
+qiskit_terra==0.24.0
+qiskit==0.43.2
